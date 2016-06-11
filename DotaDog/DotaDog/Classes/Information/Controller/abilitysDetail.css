@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body #ability{
+    width: 100%;
+/*    margin: 10px;*/
+    padding-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    /*下边框*/
+    border-bottom: 3px solid darkgrey ;
+
+}
+
+.head{
+    display: inline-block;
+}
+
+body #ability img{
+    width: 105px;
+    height: 105px;
+    float: left;
+    box-shadow: -10px 0 50px gray;
+
+}
+
+.dname{
+    margin-right: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    display: inline-block;
+    color: red;
+    /*设置阴影从浅到深，重点在于阴影的水平和垂直位置*/
+    text-shadow:
+            0 0 4px white,
+            -2px -2px 4px #ff3,
+            -2px -2px 4px #fd3,
+            -2px -3px 6px #f80,
+            -4px -3px 8px #f20;
+}
+
+.desc{
+    display: flex;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-indent: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: STSong;
+}
+
+.lore{
+    display: flex;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    text-indent: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: STFangsong;
+}
+
+.notes{
+    color: green;
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+/*    text-indent: 20px;*/
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#heroInfo h3{
+    margin: 10px;
+    text-align: center;
+    color: #31b0d5;
+}
+
+#heroInfo p{
+    margin: 10px;
+    font-size: 15px;
+    line-height: 17px;
+    text-indent: 20px;
+
+}
+
+br{
+    text-indent: 30px;
+}
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="showZJ" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="DDogShowZJCell" customModule="DotaDog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPlace" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-cl-Sf1">
+                        <rect key="frame" x="10" y="10" width="90" height="54.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="ymc-uB-EYu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="匹配类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj3-9s-cMs">
+                        <rect key="frame" x="105" y="29.5" width="52" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV1-50-9xr">
+                        <rect key="frame" x="170" y="30" width="130" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="3rC-1Z-7iK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.85483156029999996" green="0.85483156029999996" blue="0.85483156029999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-selectedIn" translatesAutoresizingMaskIntoConstraints="NO" id="80O-EJ-obX">
+                        <rect key="frame" x="302" y="31" width="5" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="97R-TI-Tnt"/>
+                            <constraint firstAttribute="width" constant="5" id="xp3-o3-oYM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OV1-50-9xr" secondAttribute="trailing" constant="20" id="496-rc-w9c"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="80O-EJ-obX" secondAttribute="trailing" constant="5" id="QQ4-2k-gm8"/>
+                    <constraint firstItem="Xj3-9s-cMs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rqa-7L-nNd"/>
+                    <constraint firstAttribute="bottom" secondItem="cWa-cl-Sf1" secondAttribute="bottom" constant="10" id="Rsn-PY-qHE"/>
+                    <constraint firstItem="OV1-50-9xr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YgM-e1-nJU"/>
+                    <constraint firstItem="cWa-cl-Sf1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sv8-lL-s96"/>
+                    <constraint firstItem="Xj3-9s-cMs" firstAttribute="leading" secondItem="cWa-cl-Sf1" secondAttribute="trailing" constant="5" id="tTP-2s-0Jc"/>
+                    <constraint firstItem="cWa-cl-Sf1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="v0I-ox-Elm"/>
+                    <constraint firstItem="80O-EJ-obX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xLj-yg-fPe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="heroIcon" destination="cWa-cl-Sf1" id="d7F-2p-vxq"/>
+                <outlet property="lobby_type" destination="Xj3-9s-cMs" id="3sB-vX-FtM"/>
+                <outlet property="time" destination="OV1-50-9xr" id="VKJ-QO-9S0"/>
+            </connections>
+            <point key="canvasLocation" x="224" y="283.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cell-selectedIn" width="8" height="13"/>
+        <image name="iconPlace" width="75" height="75"/>
+    </resources>
+</document>
